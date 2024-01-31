@@ -28,7 +28,7 @@ import BagButtonWrapper from "./BagButton/BagButtonWrapper";
 const useStyles = createStyles((theme) => ({
   root: {
     position: "relative",
-    zIndex: 999,
+    zIndex: 900,
   },
   dropdown: {
     position: "absolute",
@@ -115,10 +115,10 @@ const MainHeader = ({ onToggleColorScheme }) => {
               {!loggedUser && Object?.entries(user)?.length === 0 && (
                 <>
                   <Link to="/auth/login">
-                    <Button variant="default">Log in</Button>
+                    <Button variant="default">Sign In</Button>
                   </Link>
                   <Link to="/auth/register">
-                    <Button>Register</Button>
+                    <Button>Sign Up</Button>
                   </Link>
                 </>
               )}
