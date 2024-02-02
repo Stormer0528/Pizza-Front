@@ -64,24 +64,6 @@ const FiltersBar = ({ filters }) => {
             onChange={(value) => setPrice(value)}
           />
         </Group>
-        <TextInput
-          sx={(theme) => ({
-            flex: 1,
-            input: {
-              backgroundColor:
-                theme.colorScheme === "dark" ? "#1f2124" : "#e9e9ec",
-            },
-            [theme.fn.largerThan("sm")]: {
-              maxWidth: 300,
-            },
-            [theme.fn.smallerThan("sm")]: {
-              width: "100%",
-            },
-          })}
-          placeholder="Search"
-          value={search}
-          onChange={(e) => setSearch(e.currentTarget.value)}
-        />
         <Group>
           <ActionIcon
             sx={(theme) => ({

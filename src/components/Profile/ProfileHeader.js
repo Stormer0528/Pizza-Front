@@ -29,16 +29,6 @@ const ProfileHeader = ({ opened, onClosing }) => {
             height: "100%",
           }}
         >
-          <MediaQuery largerThan="sm" styles={{ display: "none" }}>
-            <Burger
-              opened={opened}
-              onClick={() => onClosing()}
-              size="sm"
-              color={theme.colors.gray[6]}
-              mr="xl"
-            />
-          </MediaQuery>
-
           <Text
             sx={(theme) => ({
               fontFamily: theme.fontFamily,

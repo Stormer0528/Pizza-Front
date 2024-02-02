@@ -1,4 +1,4 @@
-import { Paper, Group, Title, Text, Image, Divider } from "@mantine/core";
+import { Paper, Group, Text, Image, Divider } from "@mantine/core";
 
 const OrderDetailsModal = ({ order, subTotal }) => {
   return (
@@ -14,7 +14,7 @@ const OrderDetailsModal = ({ order, subTotal }) => {
       radius="md"
       p="md"
     >
-      <Title
+      <Text
         sx={(theme) => ({
           fontFamily: theme.fontFamily,
           paddingBottom: 16,
@@ -28,17 +28,10 @@ const OrderDetailsModal = ({ order, subTotal }) => {
         order={3}
       >
         Your Order
-      </Title>
+      </Text>
 
       {order?.cart?.cartItems?.map((item) => (
         <Group key={item._id} mb="md" mt="md">
-          <Image
-            radius="md"
-            src={item.pizza.image}
-            width={100}
-            height={100}
-            withPlaceholder
-          />
           <div style={{ width: "min-content", flexGrow: 1 }}>
             <Text lineClamp={4} component="h3">
               {item.pizza.name}
