@@ -115,10 +115,10 @@ const MainHeader = ({ onToggleColorScheme }) => {
               {!loggedUser && Object?.entries(user)?.length === 0 && (
                 <>
                   <Link to="/auth/login">
-                    <Button variant="default">Sign In</Button>
+                    <Button variant="default">Log in</Button>
                   </Link>
                   <Link to="/auth/register">
-                    <Button>Sign Up</Button>
+                    <Button>Register</Button>
                   </Link>
                 </>
               )}
