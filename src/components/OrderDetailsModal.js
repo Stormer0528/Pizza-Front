@@ -49,6 +49,14 @@ const OrderDetailsModal = ({ order, subTotal }) => {
         </Group>
       ))}
       <Divider my="sm" variant="dashed" />
+      <Group my={10} position="apart">
+        <Text>Discount</Text>
+        <Text fz="sm" fw={700}>
+          {order?.cart?.discountedPrice === 0
+            ? "- DA0"
+            : `- DA${order?.cart?.discountedPrice}`}
+        </Text>
+      </Group>
 
       <Group my={10} position="apart">
         <Text>Subtotal</Text>
@@ -61,14 +69,6 @@ const OrderDetailsModal = ({ order, subTotal }) => {
         <Text>Shipping</Text>
         <Text fz="sm" fw={700}>
           {order?.cart?.shipping === 0 ? "Free" : `${order?.cart?.shipping}DA`}
-        </Text>
-      </Group>
-      <Group my={10} position="apart">
-        <Text>Discount</Text>
-        <Text fz="sm" fw={700}>
-          {order?.cart?.discountedPrice === 0
-            ? "- DA0"
-            : `- DA${order?.cart?.discountedPrice}`}
         </Text>
       </Group>
 
