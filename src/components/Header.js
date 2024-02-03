@@ -28,7 +28,7 @@ import BagButtonWrapper from "./BagButton/BagButtonWrapper";
 const useStyles = createStyles((theme) => ({
   root: {
     position: "relative",
-    zIndex: 900,
+    zIndex: 999,
   },
   dropdown: {
     position: "absolute",
