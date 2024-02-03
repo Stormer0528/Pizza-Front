@@ -72,17 +72,6 @@ const ProfileNavbar = ({ opened, onClosing }) => {
           <Text>User Info</Text>
         </Link>
         <Link
-          to="orders"
-          className={classes.navbarItem}
-          onClick={() => onClosing()}
-        >
-          <TfiShoppingCartFull
-            className={`${classes.navbarItemIcon} icon`}
-            size={20}
-          />
-          <Text>My Orders</Text>
-        </Link>
-        <Link
           to="addresses"
           className={classes.navbarItem}
           onClick={() => onClosing()}
