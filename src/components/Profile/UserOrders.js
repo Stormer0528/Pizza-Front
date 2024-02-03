@@ -48,14 +48,6 @@ const UserOrders = () => {
       )}
       {!getUserOrdersState.loading && orders?.length > 0 && (
         <>
-          <Title
-            order={3}
-            sx={(theme) => ({
-              fontFamily: theme.fontFamily,
-            })}
-          >
-            Your Orders
-          </Title>
           <div
             style={{
               overflowX: "auto",
